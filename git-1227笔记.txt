@@ -1,0 +1,199 @@
+
+
+  git init
+
+  git log  --pretty=oneline
+  git reflog
+
+
+ 历史回退
+
+  git reset --hard 提交id
+
+
+
+将本地文件推荐到远程
+
+
+本地：
+
+   1.告诉电脑我是谁
+
+ git config --list  查看git配置
+
+添加用户名
+
+ git config --global user.name "dongjie"
+
+添加邮箱
+ git config --global user.email "dongjie@126.com"
+       
+
+   2.生成公钥密钥
+
+ ssh-keygen -t rsa -C "dongjie@126.com"
+
+ 生成的公钥，密钥默认放在C:\Users\lenovo-pc\.ssh
+
+id_rsa 密钥
+id_rsa.pub 公钥
+
+ 测试是否能与github连通
+
+  ssh -T git@github.com
+
+
+
+
+远程：
+
+
+  settings-ssh-添加公钥
+
+
+  创建远程仓库  点击右上角的+，按步骤完成即可
+
+
+推送到远程
+
+  创建一个到github的连接
+ git remote add origin git@github.com:maoyuanyuan/testApp.git
+
+
+推送
+
+  git push -u origin master
+
+ 注意：如果推送失败，应该先拉取  git pull origin master
+
+
+ 回退
+
+
+一、放弃工作区修改: git checkout -- 文件
+
+二、由暂存区返回到工作区 :  git reset HEAD 文件名
+
+三、撤消版本库: git reset --hard commit_id
+
+
+
+
+   工作区->暂存区->分支
+
+
+工作区与暂存区区别: git diff 文件名
+
+
+git命令简写
+
+   git config --global alias.别名 "命令"   
+
+ 
+  git clone  git地址
+
+
+
+
+git分支管理【重点】
+
+  查看分支：git branch
+
+  创建分支：git branch 新分支名
+
+  切换分支: git checkout 分支名
+
+
+   创建并切换到当前分支：git checkout -b 新分支名
+
+
+
+  删除分支:
+
+ git branch -d dongjie   注：先合并后删除
+
+git branch -D dongjie  注：可直接删除，无论是否合并
+
+
+  合并分支：git merge 要合并的分支名、
+
+  若在不同分支上同时修改某一个文件，会产生冲突，则需要手动解决，然后再提交
+
+
+
+
+   git stash 保存现场
+
+
+   git stash pop 恢复现场
+
+
+ ============================
+
+
+  提交分支到远程
+
+   git push origin 分支名
+
+
+  删除远程分支
+
+  git push origin :分支名
+
+
+ tag管理（标签版本管理）
+
+  查看：git tag
+  创建tag : git tag 版本名
+
+  提交本地tagh到远程：git push origin 分支名
+
+   打在指定的commit上： git tag 版本名  提交id
+
+
+ 查看tag详情：git show 标签名
+
+   例如： git show v0.2
+
+
+ 删除远程tag:
+
+ git push origin :refs/tags/tag名称
+例如： git push origin :refs/tags/v0.1
+
+
+
+git branch --set-upstream branch-name origin/branch-name
+
+ 
+怎么用gitgub搭建个人网站
+
+
+https://microsoft.github.io/
+
+https://chenli.github.io/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
