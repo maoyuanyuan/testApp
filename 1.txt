@@ -1,0 +1,27 @@
+
+  企业站： maoyuanyuan.github.io  
+
+   注意：一个github帐号只能建立一个
+
+
+  项目站：一个github帐号可以建立多个
+
+
+   第一种情况：可以针对master分支创建项目站
+   第二种情况：gh-pages 分支
+
+   第三种情况：master分支下   /docs
+   
+
+git pull origin master
+
+
+
+
+ git pull origin <远程分支名>:<本地分支名>
+
+ git pull  origin gh-pages
+
+
+Git远程操作详解
+http://www.ruanyifeng.com/blog/2014/06/git_remote.html
