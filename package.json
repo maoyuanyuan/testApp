@@ -1,0 +1,43 @@
+{
+  "name": "gulp-test",
+  "version": "0.0.1",
+  "description": "gulp-test",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "dependencies": {
+    "zepto": "^1.2.0"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-clean": "^0.3.2",
+    "gulp-clean-css": "^2.3.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-connect": "^5.0.0",
+    "gulp-jshint": "^2.0.4",
+    "gulp-less": "^3.3.0",
+    "gulp-load-plugins": "^1.4.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-rev": "^7.1.2",
+    "gulp-rev-collector": "^1.1.1",
+    "gulp-uglify": "^2.0.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maoyuanyuan/testApp.git"
+  },
+  "keywords": [
+    "gulp"
+  ],
+  "author": "1412B",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/maoyuanyuan/testApp/issues"
+  },
+  "homepage": "https://github.com/maoyuanyuan/testApp#readme"
+}

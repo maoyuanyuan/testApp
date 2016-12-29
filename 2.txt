@@ -1,0 +1,98 @@
+
+  git add  a.html
+  git add b.html
+
+
+ .gitignore  添加忽略文件
+
+
+===============================
+
+gulp 
+
+ 一、gulp是什么：是一款基于node的前端自动化构建工具，目的是为了简化前端开发流程
+
+
+  grunt  前两年
+
+  当前 gulp
+
+ 二、如何使用gulp
+
+  第一步：先安装全局gulp
+
+    npm install gulp -g
+
+  第二步：创建一个package.json
+
+  第三步：安装本地gulp
+
+   npm install gulp --save-dev
+
+  第四步 ：创建一个gulpfile.js  作用：配置各种任务  例如：压缩，合并，代码检查，编译less,sass等
+
+
+    gulp常用功能：
+
+     js压缩：gulp-uglify
+     css压缩：gulp-clean-css
+     文件重命名：gulp-rename
+     文件合并：gulpo-concat
+     文件删除：gulp-clean
+     代码检查：gulp-jshint
+     编译less/sass:gulp-less,或gulp-sass
+     css自动加前缀：gulp-autoprefixer
+     gulp启动服务：gulp-connect
+     加md5:gulp-rev
+     ............
+
+    gulp-rev-collector
+
+
+loadPlugins.revCollector
+
+
+
+
+
+gulp任务依赖
+
+gulp.task('任务名',['依赖任务1','依赖任务2'],function() {
+
+     //当前任务
+
+})
+
+执行默认任务 default
+gulp.task('default',function() {
+
+     //当前任务
+
+})
+
+命令行执行：gulp并回车
+
+
+任务监听:watch
+
+
+
+  代码一改，自动合并文件
+  css一 改，自动压缩
+
+  利用gulp-connect实时刷新浏览器
+
+
+  简化gulp引入的包：gulp-load-plugins
+
+
+
+
+
+
+
+
+
+
+   
+
